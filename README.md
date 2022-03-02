@@ -1,2 +1,1 @@
-# happendo.github.io
-This is my website, with some curiosities and projects.
+# This is my website, with some curiosities and projects.
