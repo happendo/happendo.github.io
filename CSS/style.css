@@ -1,0 +1,45 @@
+@import url('https://fonts.googleapis.com/css2?family=Open+Sans&display=swap');
+body {
+    background-color: rgb(31, 32, 34);
+    font-family: 'Open Sans', sans-serif;
+    font-size: 26px;
+    color: antiquewhite;
+}
+
+#nome {
+    position: absolute;
+    z-index: 1;
+    margin-left: 90px;
+    margin-top: 60px;
+    font-size: 26px;
+}
+#nome:hover {
+    color: rgb(145, 114, 114);
+}
+
+#qse, .introducao {
+    font-size: medium;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: medium;
+}
+#qse {
+    position: absolute;
+    z-index: 2;
+    margin-top: 20%;
+    left: 40%;
+    font-size: larger;
+}
+
+.introducao {
+    position: absolute;
+    z-index: 3;
+    color: rgb(255, 248, 240);
+    border: 2px solid #2d2d2d;
+    border-radius: 2px;
+    border-width: 10px;
+    background-color: rgb(45,45,45);
+    margin-top: 25%;
+    left: 30%;
+}
