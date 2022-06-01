@@ -7,18 +7,18 @@ body {
     user-select: none;
     animation: fadeIn linear 1s;
 }
+
 @keyframes fadeIn {
     0% {opacity:0;}
     100% {opacity:1;}
   }
 
-
 #nome {
-    position: absolute;
+    position: fixed;
     z-index: 1;
     margin-left: 90px;
     margin-top: 60px;
-    font-size: 26px;
+    font-size: 25px;
     color: antiquewhite;
     background-color: rgb(31, 32, 34);
     border: 1px solid rgb(45, 45, 45);
@@ -34,6 +34,7 @@ body {
     align-items: center;
     font-size: medium;
 }
+
 #qse {
     position: absolute;
     z-index: 2;
