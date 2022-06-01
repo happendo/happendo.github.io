@@ -1,15 +1,5 @@
 document.addEventListener('contextmenu', event => event.preventDefault());
 
-corArq()
-function corArq() {
-if (localStorage.getItem("modoCor") === null) {
-    localStorage.setItem("modoCor", "false");
-}
-
-if (localStorage = {modoCor: "true"}) {
-    trocaCor()
-}}
-
 function trocaCor() {
     //variáveis para facilitar a vida
     const bodyStyle = document.body.style
@@ -40,4 +30,11 @@ function trocaCor() {
     bodyStyle.color = fontColor;
     bodyStyle.backgroundColor = backColor;
     console.log("Cores mudadas.")
+}
+
+if (localStorage.getItem("modoCor") === null) {
+    localStorage.setItem("modoCor", "false");
+}
+if (localStorage.getItem("modoCor") === "true") {
+    trocaCor()
 }
