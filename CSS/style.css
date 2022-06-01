@@ -5,6 +5,7 @@ body {
     font-size: 26px;
     color: antiquewhite;
     user-select: none;
+    animation: fadeIn linear 1s;
 }
 
 #nome {
@@ -19,6 +20,10 @@ body {
     border-radius: 2px;
     border-width: 1px;
 }
+@keyframes fadeIn {
+    0% {opacity:0;}
+    100% {opacity:1;}
+  }
 
 #qse, #introducao {
     font-size: medium;
@@ -33,6 +38,7 @@ body {
     margin-top: 20%;
     left: 40%;
     font-size: larger;
+    animation: fadeIn linear 2s;
 }
 
 #introducao {
@@ -45,4 +51,5 @@ body {
     margin-top: 25%;
     padding: 10px;
     left: 30%;
+    animation: fadeIn linear 3s;
 }
