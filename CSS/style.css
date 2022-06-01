@@ -4,6 +4,7 @@ body {
     font-family: 'Open Sans', sans-serif;
     font-size: 26px;
     color: antiquewhite;
+    user-select: none;
 }
 
 #nome {
@@ -12,12 +13,21 @@ body {
     margin-left: 90px;
     margin-top: 60px;
     font-size: 26px;
-}
-#nome:hover {
-    color: rgb(145, 114, 114);
+    color: antiquewhite;
+    background-color: rgb(31, 32, 34);
+    border: 1px solid rgb(45, 45, 45);
+    border-radius: 2px;
+    border-width: 1px;
 }
 
-#qse, .introducao {
+#nome:hover {
+    color: rgb(227, 227, 227);
+}
+#nomeW:hover {
+    color: rgb(28, 28, 28);
+}
+
+#qse, #introducao {
     font-size: medium;
     display: flex;
     justify-content: center;
@@ -32,14 +42,14 @@ body {
     font-size: larger;
 }
 
-.introducao {
+#introducao {
     position: absolute;
     z-index: 3;
     color: rgb(255, 248, 240);
-    border: 2px solid #2d2d2d;
     border-radius: 2px;
     border-width: 10px;
-    background-color: rgb(45,45,45);
+    border: 1px solid rgb(45, 45, 45);
     margin-top: 25%;
+    padding: 10px;
     left: 30%;
 }
