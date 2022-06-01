@@ -1,4 +1,10 @@
-document.addEventListener('contextmenu', event => event.preventDefault());
+if (localStorage.getItem("modoCor") === "true") {
+    trocaCor()
+}
+
+if (localStorage.getItem("modoCor") === null) {
+    localStorage.setItem("modoCor", "false");
+}
 
 function trocaCor() {
     //variáveis para facilitar a vida
@@ -32,9 +38,4 @@ function trocaCor() {
     console.log("Cores mudadas.")
 }
 
-if (localStorage.getItem("modoCor") === null) {
-    localStorage.setItem("modoCor", "false");
-}
-if (localStorage.getItem("modoCor") === "true") {
-    trocaCor()
-}
+document.addEventListener('contextmenu', event => event.preventDefault());
