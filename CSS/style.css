@@ -20,13 +20,6 @@ body {
     border-width: 1px;
 }
 
-#nome:hover {
-    color: rgb(227, 227, 227);
-}
-#nomeW:hover {
-    color: rgb(28, 28, 28);
-}
-
 #qse, #introducao {
     font-size: medium;
     display: flex;
