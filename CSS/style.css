@@ -1,6 +1,6 @@
 @import url('https://fonts.googleapis.com/css2?family=Open+Sans&display=swap');
 body {
-    background-color: rgb(31, 32, 34);
+    background-color: #1F2022;
     font-family: 'Open Sans', sans-serif;
     font-size: 26px;
     color: antiquewhite;
@@ -13,13 +13,13 @@ body {
     100% {opacity:1;}
   }
 #nome {
-    display: inline-block;
+    display: flex;
     margin-left: 70px;
     margin-top: 60px;
     font-size: 25px;
     color: antiquewhite;
-    background-color: rgb(31, 32, 34);
-    border: 1px solid rgb(45, 45, 45);
+    background-color: #1F2022;
+    border: 1px solid #2D2D2D;
     border-radius: 2px;
     border-width: 1px;
     padding: 4px;
@@ -29,8 +29,11 @@ body {
 header a {
     list-style-type: none;
 }
+#inicio {
+    display: flex;
+}
 #projetos {
-    margin-left: 63%;
+    margin-left: 60%;
 }
 #contato {
     margin-right: 70px;
@@ -52,11 +55,10 @@ header a {
 }
 
 #introducao {
-    display: flex;
     color: rgb(255, 248, 240);
     border-radius: 2px;
     border-width: 5px;
-    border: 1px solid rgb(45, 45, 45);
+    border: 1px solid #2D2D2D;
     padding: 10px;
     margin-top: 5%;
     animation: fadeIn linear 3s;

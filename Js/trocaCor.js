@@ -14,17 +14,17 @@ function trocaCor() {
     const idQse = document.getElementById('qse').style
     const idIntroducao = document.getElementById('introducao').style
     //responsável por fazer tudo funcionar
-    if (bodyStyle.backgroundColor == "rgb(31, 32, 34)" || bodyStyle.backgroundColor == '') {
-        backColor = "rgb(247,247,247)";
-        fontColor = "rgb(41, 41, 41)";
-        fontIColor = "rgb(0, 7, 15)";
-        borderColor = "rgb(45,45,45)";
+    if (bodyStyle.backgroundColor == "#1F2022" || bodyStyle.backgroundColor == '') {
+        backColor = "#F7F7F7";
+        fontColor = "#292929";
+        fontIColor = "#00070F";
+        borderColor = "#2D2D2D";
         localStorage.setItem("modoCor", "true");
         } else {
-        backColor = "rgb(31, 32, 34)";
-        fontColor = "rgb(250, 235, 215)";
-        fontIColor = "rgb(255, 248, 240)";
-        borderColor = "rgb(45,45,45)";
+        backColor = "#1F2022";
+        fontColor = "#FAEBD7";
+        fontIColor = "#FFF8F0";
+        borderColor = "#2D2D2D";
         localStorage.setItem("modoCor", "false");
     }
     //definir cores
