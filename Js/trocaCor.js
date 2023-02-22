@@ -1,8 +1,4 @@
-//responsável pela troca para o modo claro, caso tenha sido escolhido anteriormente
-if (localStorage.getItem("modoCor") === "true") {
-    trocaCor()
-}
-//responsável por criar o arquivo "modoCor" caso não tenha sido gerado anteriormente
+//responsável por criar armazenar "modoCor", responsável por guardar sua cor escolhida para uma próxima abertura.
 if (localStorage.getItem("modoCor") === null) {
     localStorage.setItem("modoCor", "false");
 }
@@ -13,20 +9,21 @@ function trocaCor() {
     const idNome = document.getElementById('nome').style
     const idQse = document.getElementById('qse').style
     const idIntroducao = document.getElementById('introducao').style
+
     //responsável por fazer tudo funcionar
-    if (bodyStyle.backgroundColor == "#1F2022" || bodyStyle.backgroundColor == '') {
+    if (bodyStyle.backgroundColor == '' || bodyStyle.backgroundColor == "rgb(31, 32, 34)") {
         backColor = "#F7F7F7";
         fontColor = "#292929";
         fontIColor = "#00070F";
         borderColor = "#2D2D2D";
         localStorage.setItem("modoCor", "true");
-        } else {
+    } else {
         backColor = "#1F2022";
         fontColor = "#FAEBD7";
         fontIColor = "#FFF8F0";
         borderColor = "#2D2D2D";
-        localStorage.setItem("modoCor", "false");
-    }
+        localStorage.setItem("modoCor", "false");}
+    
     //definir cores
     idNome.backgroundColor = backColor;
     idNome.color = fontColor;
@@ -39,4 +36,7 @@ function trocaCor() {
     console.log("Cores mudadas.")
 }
 
-document.addEventListener('contextmenu', event => event.preventDefault());
+//responsável pela troca para o modo claro, caso tenha sido escolhido em uma abertura anterior do site.
+if (localStorage.getItem("modoCor") === "true") {
+    trocaCor()
+}
