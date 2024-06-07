@@ -31,7 +31,7 @@ function emBreve() {
   modal.style.backgroundColor = "rgba(0, 0, 0, 0.5)";
   modal.style.zIndex = "999";
 
-  modalContent.style.backgroundColor = "#fefefe";
+  modalContent.style.backgroundColor = document.body.style.backgroundColor;
   modalContent.style.padding = "20px";
   modalContent.style.borderRadius = "10px";
 
