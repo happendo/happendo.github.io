@@ -24,7 +24,27 @@ function emBreve() {
   document.body.appendChild(modal);
 
   // Exibe a janela modal
-  modal.style.display = "block";
+  modal.style.display = "flex";
+  modal.style.alignItems = "center";
+  modal.style.justifyContent = "center";
+  modal.style.position = "fixed";
+  modal.style.left = "0";
+  modal.style.top = "0";
+  modal.style.width = "100%";
+  modal.style.height = "100%";
+  modal.style.backgroundColor = "rgba(0, 0, 0, 0.5)";
+  modal.style.zIndex = "999";
+
+  // Estilo para o conteúdo da modal
+  modalContent.style.backgroundColor = "#fefefe";
+  modalContent.style.padding = "20px";
+  modalContent.style.borderRadius = "10px";
+
+  // Estilo para o botão de fechar
+  closeButton.style.color = "#aaa";
+  closeButton.style.float = "right";
+  closeButton.style.fontSize = "28px";
+  closeButton.style.fontWeight = "bold";
 
   // Fecha a janela modal quando o usuário clica no botão de fechar
   closeButton.onclick = function() {
