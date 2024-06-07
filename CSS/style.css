@@ -24,7 +24,10 @@ header {
     border: 1px solid #2D2D2D;
     border-radius: 4px;
     border-width: 2px;
-    padding: 4px; 
+    padding: 4px;
+}
+#nome:hover, #projetos:hover, #certificacoes:hover, #contato:hover {
+    cursor: pointer;
 }
 #qse, #introducao {
     display: flex;
