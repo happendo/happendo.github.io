@@ -15,7 +15,7 @@ function emBreve() {
   modalContent.appendChild(heading);
   
   let paragraph = document.createElement("p");
-  paragraph.textContent = "Nosso novo site estará disponível em breve. Aguarde ansiosamente!";
+  paragraph.textContent = "Site em desenvolvimento. Aguarde ansiosamente!";
   modalContent.appendChild(paragraph);
 
   document.body.appendChild(modal);
