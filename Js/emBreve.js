@@ -8,6 +8,7 @@ function emBreve() {
   let closeButton = document.createElement("span");
   closeButton.className = "close";
   closeButton.innerHTML = "&times;";
+  closeButton.style.cursor = "pointer";
   modalContent.appendChild(closeButton);
   
   let heading = document.createElement("h1");
@@ -30,8 +31,12 @@ function emBreve() {
   modal.style.height = "100%";
   modal.style.backgroundColor = "rgba(0, 0, 0, 0.5)";
   modal.style.zIndex = "999";
+  
+  if (document.body.style.backgroundColor == "") {
+    modalContent.style.backgroundColor = "#1F2022";
+  } else {
+  modalContent.style.backgroundColor = document.body.style.backgroundColor;}
 
-  modalContent.style.backgroundColor = document.body.style.backgroundColor
   modalContent.style.padding = "20px";
   modalContent.style.borderRadius = "10px";
 
