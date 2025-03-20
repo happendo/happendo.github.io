@@ -5,7 +5,7 @@ body {
     font-size: 26px;
     color: antiquewhite;
     user-select: none;
-    animation: fadeIn linear 1s;
+    animation: fadeIn linear 0.5s;
 }
 @keyframes fadeIn {
     0% {opacity:0;}
@@ -37,11 +37,6 @@ header {
     animation: ease-in linear  0.25s;
 }
 
-#projetos:after, #certificacoes:after, #contato:after {
-    color: black;
-    animation: fadeIn linear  0.25s;
-}
-
 main {
     display: flex;
     justify-content: center;
@@ -56,6 +51,7 @@ main {
 #qse {
     font-size: larger;
     margin-top: 150px;
+    padding: 20px 0 0 0;
     animation: fadeIn linear 0.5s;
 }
 .textoInt {
