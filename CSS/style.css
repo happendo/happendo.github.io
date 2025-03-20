@@ -5,7 +5,7 @@ body {
     font-size: 26px;
     color: antiquewhite;
     user-select: none;
-    animation: fadeIn linear 1s;
+    animation: fadeIn linear 0.5s;
 }
 @keyframes fadeIn {
     0% {opacity:0;}
