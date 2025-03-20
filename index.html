@@ -6,19 +6,25 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Portfólio</title>
     <link rel="stylesheet" type="text/CSS" href="CSS/style.css">
+    <script>
+        
+    </script>
 </head>
 <body>
-    <header>
-        <h1 id="nome" onclick="trocaCor()">happendo</h1>
-        <h2 id="certificacoes" onclick="emBreve()">Certificações</h2>
-        <h2 id="projetos" onclick="emBreve()">Projetos</h2>
-        <h2 id="contato" onclick="emBreve()">Contato</h2>
-    </header>
-    <main>
+<header>
+    <h1 id="nome" onclick="trocaCor()">happendo</h1>
+    <h2 id="certificacoes" onclick="emBreve()">Certificações</h2>
+    <h2 id="projetos" onclick="emBreve()">Projetos</h2>
+    <h2 id="contato" onclick="emBreve()">Contato</h2>
+</header>
+<main>
+        <div id="introducao">
         <h2 id="qse">Quem sou eu?</h2>
-        <a id="introducao">Me chamo Paulo Roberto, tenho 20 anos e sou estudante do Bacharelado Interdisciplinar em Ciência e Tecnologia na Universidade Federal de Pernambuco.<br>Aqui mostrarei meus projetos e planos futuros.</a>
+        <p class="textoInt">Meu nome é Paulo, tenho <a id="actualAge"></a> anos, trabalho na empresa Valtech  e sou estudante do Bacharelado Interdisciplinar em Ciência e Tecnologia na Universidade Federal de Pernambuco.<br>Aqui mostrarei meus projetos e planos futuros.</p>
+    </div>
     </main>
 </body>
     <script src="Js/trocaCor.js"></script>
+    <script src="Js/anos.js"></script>
     <script src="Js/emBreve.js"></script>
 </html>
