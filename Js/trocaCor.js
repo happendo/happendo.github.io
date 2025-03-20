@@ -3,6 +3,8 @@ if (localStorage.getItem("modoCor") === null) {
     localStorage.setItem("modoCor", "false");
 }
 
+// é mais eficiente que eu faça uma procura em todos innerHTML se são iguais a determinar cor e troca-los todos de uma vez.
+
 function trocaCor() {
     //variáveis para facilitar a vida
     const bodyStyle = document.body.style

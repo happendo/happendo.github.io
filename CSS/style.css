@@ -5,7 +5,7 @@ body {
     font-size: 26px;
     color: antiquewhite;
     user-select: none;
-    animation: fadeIn linear 0.5s;
+    animation: fadeIn linear 1s;
 }
 @keyframes fadeIn {
     0% {opacity:0;}
@@ -32,6 +32,15 @@ header {
 #nome:hover, #projetos:hover, #certificacoes:hover, #contato:hover {
     cursor: pointer;
 }
+#projetos:hover, #certificacoes:hover, #contato:hover {
+    border-bottom: 2px solid antiquewhite;
+    animation: ease-in linear  0.25s;
+}
+
+#projetos:after, #certificacoes:after, #contato:after {
+    color: black;
+    animation: fadeIn linear  0.25s;
+}
 
 main {
     display: flex;
@@ -41,20 +50,20 @@ main {
 }
 
 #introducao {
-    max-width: 800px;
+    max-width: 90%;
 }
 
 #qse {
     font-size: larger;
     margin-top: 150px;
-    animation: fadeIn linear 2s;
+    animation: fadeIn linear 0.5s;
 }
 .textoInt {
     font-size: medium;
     color: rgb(255, 248, 240);
     border: 2px solid #2D2D2D;
     padding: 10px;
-    animation: fadeIn linear 3s;
+    animation: fadeIn linear 1s;
     text-align: center;
     border-radius: 2px;
     border-width: 1px;
