@@ -39,7 +39,6 @@ header {
 }
 
 main {
-    max-width: 1000px;
     display: flex;
     justify-content: center;
     align-items: center;
@@ -47,10 +46,11 @@ main {
 }
 
 #introducao {
-    max-width: 90%;
+    max-width: 1000px;
 }
 
 #qse {
+    max-width: 1000px;
     font-size: larger;
     margin-top: 150px;
     padding: 20px 0 0 0;
