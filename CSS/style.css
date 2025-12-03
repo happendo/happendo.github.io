@@ -58,7 +58,6 @@ main {
 }
 .textoInt {
     font-size: medium;
-    color: rgb(255, 248, 240);
     border: 2px solid #2D2D2D;
     padding: 10px;
     animation: fadeIn linear 1s;
@@ -82,3 +81,4 @@ main {
         justify-content: center;
     }
 }
+
